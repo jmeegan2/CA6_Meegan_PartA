@@ -65,6 +65,13 @@ class RoboHunter implements Predator {
             System.out.println("Nutrition of Bait: " + bait.nutrition());
             nature(roboHunter, bait);
         }
+
+        /**
+         * nature(Predator predator, Prey prey)
+         * this method takes in predator and prey instances
+         * the predator eats the prey if the hunt is successful
+         * the hunt is always successful because RoboHunters is a good shot
+         */
         public static void nature(Predator predator, Prey prey) {
             if (predator.hunt(prey)) {
                 predator.eat(prey);
